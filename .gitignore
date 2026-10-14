@@ -1,0 +1,45 @@
+
+@'
+# Python virtual environments
+.venv/
+.venv311/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+'@ | Set-Content -Encoding utf8 .gitignore
+
+# Resume datasets (keep local; do not publish)
+data/
+
+# Generated ranking reports (regenerate when needed)
+outputs/*.csv
+
+# Generated or downloaded model artifacts
+models/
